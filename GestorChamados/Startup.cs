@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using GestorChamados.Models;
 
 namespace GestorChamados
 {
@@ -33,6 +35,9 @@ namespace GestorChamados
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<GestorChamadosContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("GestorChamadosContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
