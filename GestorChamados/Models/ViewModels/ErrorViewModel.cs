@@ -1,6 +1,6 @@
 using System;
 
-namespace GestorChamados.Models
+namespace GestorChamados.Models.ViewModels
 {
     public class ErrorViewModel
     {
