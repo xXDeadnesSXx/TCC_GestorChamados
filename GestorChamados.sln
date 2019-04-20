@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestorChamados", "GestorChamados\GestorChamados.csproj", "{667428E8-8386-42CA-935D-0280BFD292F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{667428E8-8386-42CA-935D-0280BFD292F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667428E8-8386-42CA-935D-0280BFD292F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667428E8-8386-42CA-935D-0280BFD292F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667428E8-8386-42CA-935D-0280BFD292F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC48B629-0446-4432-A2DB-05F5CD2D87BB}
+	EndGlobalSection
+EndGlobal
