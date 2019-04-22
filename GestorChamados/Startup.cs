@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using GestorChamados.Models;
+using GestorChamados.Services;
 
 namespace GestorChamados
 {
@@ -39,6 +40,8 @@ namespace GestorChamados
             services.AddDbContext<GestorChamadosContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("GestorChamadosContext"), builder =>
 builder.MigrationsAssembly("GestorChamados")));
+
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
